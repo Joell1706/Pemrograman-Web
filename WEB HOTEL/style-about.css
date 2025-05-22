@@ -1,0 +1,352 @@
+/* HOME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Warna tema */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #f39c12;
+    --text-color: #ffffff;
+    --hover-color: #e67e22;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    height: 17%; /*Seusaikan tinggi navbar */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+
+.logo-harmoni-one {
+  position: absolute;       /* Agar bisa ditempatkan di tengah */
+  top: 14px;                /* Jarak dari atas */
+  left: 10%;                /* Jarak dari kiri */
+  transform: translateX(-50%);  /* Membuat ke tengah */
+  z-index: 10;
+  height: 150px;            /* ubah sesuai ukuran yang diinginkan */
+  width: auto;              /* jaga agar tidak gepeng */
+  height: 90px !important;
+  width: auto !important;
+}
+
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+
+nav ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+
+/* BACKGROUND */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url(BG.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-size: 100% auto; /* Mengisi seluruh layar, proporsional */
+    height: 100vh;
+    margin: 0;
+    padding: 40;
+    border: 0px solid;
+    border-image: fill 0 linear-gradient(to bottom #0001, #000);
+}
+
+
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+
+nav ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+
+/* Tambahan styling untuk navbar agar teks tetap terbaca */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparan */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.btn-pesan {
+  background: gold;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-pesan:hover {
+  background: darkorange;
+}
+
+/* ABOUT SECTION */
+
+.about-section1 {
+  padding: 60px 60px;
+  background: #fff;
+  text-align: center;
+}
+.about-section h1 {
+  font-size: 56px;
+  margin-top: -50px;
+  color: #333;
+}
+
+.subtitle1 {
+  color: #615e5e;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-content1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text1 {
+  max-width: 840px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about-section2 {
+   padding: 60px 60px;
+  background: #fff;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 46px;
+  margin-top: -50px;
+  color: #333;
+}
+
+.subtitle2 {
+  color: #615e5e;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-content2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.about-image {
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+.about-text2 {
+  max-width: 540px;
+  font-size: 17.5px;
+  color: #444;
+  text-align: left;
+  line-height: 1.7;
+  margin-left: -100px;
+  margin-bottom: 100px;
+}
+
+/* Tambahan styling untuk memperindah */
+.about-section {
+  padding: 60px 40px;
+  background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-image {
+  max-width: 480px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  max-width: 540px;
+  font-size: 18px;
+  color: #444;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Tambahan slider gambar */
+.image-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.image-slider img {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+margin-left: 60px;
+}
+
+.image-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

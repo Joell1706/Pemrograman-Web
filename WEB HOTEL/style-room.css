@@ -1,0 +1,258 @@
+/* HOME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Warna tema */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #f39c12;
+    --text-color: #ffffff;
+    --hover-color: #e67e22;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    height: 17%; /*Seusaikan tinggi navbar */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+
+.logo-harmoni-one {
+  position: absolute;       /* Agar bisa ditempatkan di tengah */
+  top: 14px;                /* Jarak dari atas */
+  left: 10%;                /* Jarak dari kiri */
+  transform: translateX(-50%);  /* Membuat ke tengah */
+  z-index: 10;
+  height: 150px;            /* ubah sesuai ukuran yang diinginkan */
+  width: auto;              /* jaga agar tidak gepeng */
+  height: 90px !important;
+  width: auto !important;
+}
+
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+
+nav ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+
+/* BACKGROUND */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url(BG.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-size: 100% auto; /* Mengisi seluruh layar, proporsional */
+    height: 100vh;
+    margin: 0;
+    padding: 40;
+    border: 0px solid;
+    border-image: fill 0 linear-gradient(to bottom #0001, #000);
+}
+
+
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+
+nav ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+
+/* Tambahan styling untuk navbar agar teks tetap terbaca */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparan */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.btn-pesan {
+  background: gold;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-pesan:hover {
+  background: darkorange;
+}
+
+
+/* ===== ROOM SECTION ===== */
+.room-section {
+  padding: 20px 10px;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  text-align: center;
+}
+
+.room-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.room-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -10px;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+}
+
+.room-card h3 {
+  margin-top: 16px;
+  font-size: 22px;
+  color: #222;
+}
+
+.room-card p {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.price {
+  display: block;
+  margin: 16px 0 20px;
+  font-weight: bold;
+  color: #e6a800;
+  font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 0px;
+}
